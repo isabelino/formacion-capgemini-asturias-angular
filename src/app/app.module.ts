@@ -1,14 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { AcumuladorModule } from './acumulador/acumulador.module';
 import { AppComponent } from './app.component';
+import { DbzModule } from './dbz/dbz.module';
+import { HeroesModule } from './heroe/heroe.module';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HeroesModule,
+    AcumuladorModule,
+    DbzModule
   ],
   providers: [],
   bootstrap: [AppComponent]
